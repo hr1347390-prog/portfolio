@@ -1,0 +1,453 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-wrapper {
+  background-color: rgb(78, 78, 78);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+   background-color: rgb(82, 82, 82);
+  position: sticky;
+  top: 0;
+  z-index:4 ;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fcd34d;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  position: absolute;
+  left: 400px;
+  top: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fcd34d;
+}
+.nav-icons a{
+  justify-content: space-between;
+    font-size: 20px;
+margin-right: 10px;
+color: black;
+transition: color 0.3s;
+}
+.nav-icons a:hover{
+    width: 25px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-content h2 {
+  color: rgb(12, 12, 12);
+  font-size: 2em;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  color: #c9c9c9;
+  max-width: 250px;
+}
+
+.hero-content div {
+  height: 4px;
+  width: 180px;
+  background-color: #fcd34d;
+}
+
+.hero-circle {
+  background-color: #202020;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  position: absolute;
+  top: 100px;
+  left: 450px;
+}
+
+.profile-img {
+  width: 300px;
+  position: absolute;
+  top: 80px;
+  left: 500px;
+}
+
+.services-box {
+  color: white;
+  position: absolute;
+  right: 200px;
+  top: 130px;
+}
+
+.services-box p {
+  width: 300px;
+}
+
+.show-more {
+  color: #fcd34d;
+}
+
+.services-box a {
+  width: 20px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+  border-radius: 50%;
+  color: rgb(255, 217, 0);
+}
+
+.services-box img:hover {
+  transform: scale(1.1);
+}
+
+.brands-row {
+  display: flex;
+  gap: 20px;
+  background: #2c2f38;
+  padding: 20px;
+  width: 750px;
+  position: absolute;
+  top: 480px;
+  left: 300px;
+}
+
+.brand-item {
+  background-color: #3a3d47;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: inset 0 0 8px #33353b;
+  width: 160px;
+}
+
+.brand-item:hover {
+  background-color: #444857;
+  transform: translateY(-5px);
+}
+
+.brand-item img {
+  width: 130px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.section-two {
+  background-color: #202020;
+}
+
+.section-header {
+  padding: 50px 10%;
+  color: white;
+  width: 600px;
+  height: 120px;
+}
+
+.section-header p {
+  color: gray;
+  width: 300px;
+}
+
+table {
+  padding: 5% 10%;
+  width: 800px;
+  background-color: #202020;
+}
+
+.stat-number {
+  color: #fcd34d;
+  font: 2em sans-serif;
+  height: 20vh;
+  font-weight: bold;
+}
+
+.stat-text {
+  color: gray;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  position: absolute;
+  right: 200px;
+  top: 700px;
+}
+
+.project-item {
+  background-color: #202020;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item img {
+  width: 140px;
+  height: 80px;
+}
+
+.project-details h3 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+
+.project-details p {
+  color: #aaa;
+  font-size: 13px;
+  margin: 3px 0 0;
+}
+
+.separator-line {
+  height: 1px;
+  width: 380px;
+  background-color: gray;
+}
+
+.arrow-icon {
+  color: #fcd34d;
+  font-size: 2em;
+}
+/* ============================
+   RESPONSIVE FOR LARGE LAPTOPS
+   ============================ */
+@media (max-width: 1400px) {
+  .hero-circle {
+    left: 400px;
+  }
+  .profile-img {
+    left: 450px;
+  }
+  .services-box {
+    right: 150px;
+  }
+  .brands-row {
+    left: 200px;
+  }
+  .projects-list {
+    right: 150px;
+  }
+}
+
+/* ============================
+   RESPONSIVE FOR TABLETS (992px)
+   ============================ */
+@media (max-width: 992px) {
+
+  nav ul {
+    left: 200px;
+    gap: 20px;
+  }
+
+  .hero-circle {
+    left: 300px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile-img {
+    left: 330px;
+    width: 250px;
+    top: 90px;
+  }
+
+  .services-box {
+    right: 80px;
+    top: 120px;
+  }
+
+  .brands-row {
+    width: 90%;
+    left: 5%;
+    top: 500px;
+  }
+
+  .projects-list {
+    right: 50px;
+    top: 750px;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+/* ============================
+   RESPONSIVE FOR MOBILE LANDSCAPE (768px)
+   ============================ */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    position: static;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-icons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .hero-section {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-circle {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .profile-img {
+    position: static;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .services-box {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .brands-row {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .projects-list {
+    position: static;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  table {
+    width: 100%;
+    padding: 5%;
+  }
+}
+
+/* ============================
+   RESPONSIVE FOR SMALL MOBILES (576px)
+   ============================ */
+@media (max-width: 576px) {
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+
+  .services-box p {
+    width: 250px;
+    margin: auto;
+  }
+
+  .brand-item {
+    width: 120px;
+  }
+
+  .project-item img {
+    width: 110px;
+    height: 70px;
+  }
+}
+
+/* ============================
+   EXTRA SMALL PHONES (450px)
+   ============================ */
+@media (max-width: 450px) {
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero-section {
+    padding: 40px 5%;
+  }
+
+  .brands-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .brand-item {
+    width: 90%;
+    margin: auto;
+  }
+
+  .projects-list {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
