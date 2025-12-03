@@ -249,9 +249,7 @@ table {
   color: #fcd34d;
   font-size: 2em;
 }
-/* ============================
-   RESPONSIVE FOR LARGE LAPTOPS
-   ============================ */
+
 @media (max-width: 1400px) {
   .hero-circle {
     left: 400px;
@@ -270,9 +268,7 @@ table {
   }
 }
 
-/* ============================
-   RESPONSIVE FOR TABLETS (992px)
-   ============================ */
+
 @media (max-width: 992px) {
 
   nav ul {
@@ -313,9 +309,6 @@ table {
   }
 }
 
-/* ============================
-   RESPONSIVE FOR MOBILE LANDSCAPE (768px)
-   ============================ */
 @media (max-width: 768px) {
 
   header {
@@ -375,9 +368,7 @@ table {
   }
 }
 
-/* ============================
-   RESPONSIVE FOR SMALL MOBILES (576px)
-   ============================ */
+
 @media (max-width: 576px) {
 
   .logo {
